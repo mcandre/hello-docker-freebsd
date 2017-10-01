@@ -1,5 +1,7 @@
 #!/bin/sh
 
-sudo kldload /boot/kernel/zfs.ko
+echo "Bootstrapping..."
 
-sudo pkg install -y docker-freebsd ca_root_nss
+# sudo kldload /boot/kernel/zfs.ko
+
+# sudo pkg install -y docker-freebsd ca_root_nss

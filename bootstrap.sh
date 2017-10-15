@@ -1,7 +1,6 @@
 #!/bin/sh
-
-echo "Bootstrapping..."
-
-# sudo kldload /boot/kernel/zfs.ko
-
-# sudo pkg install -y docker-freebsd ca_root_nss
+sudo pkg update && \
+    sudo pkg install -y docker-freebsd ca_root_nss && \
+    sudo echo "docker_enable=\"YES\"" >> /etc/rc.conf && \
+    zfs create -o mountpoint=/usr/docker zroot/docker && \
+    service docker start

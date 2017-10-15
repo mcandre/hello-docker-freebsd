@@ -11,7 +11,7 @@ Hello World
 # REQUIREMENTS
 
 * [Vagrant](https://www.vagrantup.com)
-* [VirtualBox](https://www.virtualbox.org)
+* A VM provider, such as [VirtualBox](https://www.virtualbox.org), [VMware](https://www.vmware.com), or [libvirt](https://libvirt.org)
 
 # NOTES
 

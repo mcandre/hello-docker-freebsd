@@ -14,6 +14,8 @@ Hello World!
 
 By using a Vagrant box for a FreeBSD VM, users can enjoy manipulating FreeBSD containers from non-BSD hosts, such as Linux, macOS, Windows, etc.
 
+As a bonus, FreeBSD can run both ELF and legacy a.out Linux binaries, when `linux_enable` is [configured](http://www.tldp.org/HOWTO/Linux+FreeBSD-6.html).
+
 # REQUIREMENTS
 
 * [Vagrant](https://www.vagrantup.com)

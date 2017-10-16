@@ -14,12 +14,12 @@ Hello World!
 
 By using a Vagrant box for a FreeBSD VM, users can enjoy manipulating FreeBSD containers from non-BSD hosts, such as Linux, macOS, Windows, etc.
 
-Native FreeBSD hosts can install and configure Docker with `bootstrap.sh`, or by following the [Docker on FreeBSD](https://wiki.freebsd.org/Docker) wiki instructions.
-
 # REQUIREMENTS
 
 * [Vagrant](https://www.vagrantup.com)
 * A VM provider, such as [VirtualBox](https://www.virtualbox.org), [VMware](https://www.vmware.com), or [libvirt](https://libvirt.org)
+
+If the host is already a native FreeBSD instance, then `bootstrap.sh` or following the [Docker on FreeBSD](https://wiki.freebsd.org/Docker) wiki instructions are sufficient for running FreeBSD containers, no Vagrant or VM providers are necessary.
 
 # NOTES
 

@@ -1,12 +1,20 @@
 # hello-docker-freebsd: Example Docker setup for FreeBSD
 
+# ABOUT
+
+Minimal configuration for running FreeBSD Docker containers.
+
 # EXAMPLE
 
 ```console
 $ vagrant up
-$ vagrant ssh -c "docker run library/debian echo 'Hello World'"
-Hello World
+$ vagrant ssh -c "docker run auchida/freebsd echo 'Hello World!'"
+Hello World!
 ```
+
+By using a Vagrant box for a FreeBSD VM, users can enjoy manipulating FreeBSD containers from non-BSD hosts, such as Linux, macOS, Windows, etc.
+
+Native FreeBSD hosts can install and configure Docker with `bootstrap.sh`, or by following the [Docker on FreeBSD](https://wiki.freebsd.org/Docker) wiki instructions.
 
 # REQUIREMENTS
 

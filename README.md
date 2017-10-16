@@ -23,7 +23,7 @@ If the host is already a native FreeBSD instance, then `bootstrap.sh` or followi
 
 # NOTES
 
-Docker support with FreeBSD is nascent. Docker from FreeBSD hosts lacks support for alt-libc containers, so FreeBSD and Debian containers may work from FreeBSD hosts, but not containers for library/busybox:uclibc nor library/alpine (musl).
+Docker support with FreeBSD is nascent. Docker from FreeBSD hosts lacks support for alt-libc containers, so FreeBSD and Debian containers may work from FreeBSD hosts, but not containers for library/busybox:uclibc nor library/alpine (musl). So in the event that you are using a native FreeBSD host, and want to run alt-libc containers, you will want to setup a VM with Linux + Docker, such as [williamyeh/ubuntu-trusty64-docker](https://app.vagrantup.com/williamyeh/boxes/ubuntu-trusty64-docker).
 
 Docker relies on the Linux kernel to do its magic, so while Docker is able to manipulate non-Linux containers, these must be run from a compatible Docker host. In other words, FreeBSD containers must be run from FreeBSD hosts. Fortunately, Vagrant can help automate the setup of a FreeBSD VM for non-BSD machines, so that you end up being able to run FreeBSD containers, on top of FreeBSD, on top of Vagrant, on top of Linux/macOS/Windows/etc.
 

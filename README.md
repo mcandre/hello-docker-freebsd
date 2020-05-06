@@ -7,7 +7,7 @@ Minimal configuration for running FreeBSD Docker containers, either from native 
 # EXAMPLE (native FreeBSD host)
 
 ```console
-$ sh bootstrap.sh
+$ ./bootstrap
 $ docker run auchida/freebsd echo 'Hello World!'
 Hello World!
 ```

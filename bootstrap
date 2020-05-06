@@ -1,4 +1,8 @@
 #!/bin/sh
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
 sudo pkg update && \
     sudo pkg install -y docker-freebsd ca_root_nss && \
     sudo echo "docker_enable=\"YES\"" >> /etc/rc.conf && \
